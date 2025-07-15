@@ -18,9 +18,9 @@ This project includes:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```bash
-📦 Twitter_sentiment_analysis
+Twitter_sentiment_analysis
 ├── twitter_sentiment.py         # Main training + prediction pipeline
 ├── requirements.txt             # Python dependencies
 ├── submission_*.csv             # Exported test results (auto-generated)
@@ -29,7 +29,7 @@ This project includes:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 ```bash
 # 1. Create virtual environment
 python -m venv venv
@@ -46,7 +46,7 @@ python twitter_sentiment.py
 
 ---
 
-## 📊 Sample Output
+## Sample Output
 ```csv
 id,tweet,label
 31963,Just finished a great movie,0
