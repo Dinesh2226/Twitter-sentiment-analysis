@@ -88,7 +88,7 @@ for model in models:
         print(f"\nTraining: {model.__class__.__name__}")
         model.fit(x_train, y_train)
         y_pred = model.predict(x_valid)
-        print("✅ Model trained and predicted")
+        print("Model trained and predicted")
 
         print("Training Accuracy:", model.score(x_train, y_train))
         print("Validation Accuracy:", model.score(x_valid, y_valid))
@@ -97,7 +97,7 @@ for model in models:
             score = f1_score(y_valid, y_pred)
             print("F1 Score:", score)
         except Exception as e:
-            print(f"⚠️ F1 Score calculation failed: {e}")
+            print(f"F1 Score calculation failed: {e}")
             score = 0
 
         print("Confusion Matrix:\n", confusion_matrix(y_valid, y_pred))
@@ -107,7 +107,7 @@ for model in models:
             best_model = model
 
     except Exception as e:
-        print(f"❌ Failed on {model.__class__.__name__}: {e}")
+        print(f"Failed on {model.__class__.__name__}: {e}")
 print("Checkpoint 4: Trained models")
 
 # Export predictions
@@ -126,7 +126,7 @@ try:
     filename = f"submission_{timestamp}.csv"
     output_df.to_csv(filename, index=False)
 
-    print(f"\n✅ Test predictions saved to: {filename}")
+    print(f"\nTest predictions saved to: {filename}")
     print(output_df.head())
 
     try:
@@ -134,6 +134,6 @@ try:
     except Exception as e:
         print(f"Note: Could not auto-open file. Reason: {e}")
 except Exception as e:
-    print(f"❌ Error during export: {e}")
+    print(f"Error during export: {e}")
 
-print("✅ ALL DONE — MODEL TRAINED, PREDICTED, AND EXPORTED.")
+print("ALL DONE — MODEL TRAINED, PREDICTED, AND EXPORTED.")
