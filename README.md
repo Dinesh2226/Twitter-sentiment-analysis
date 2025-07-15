@@ -1,4 +1,4 @@
-# 🐦 Twitter Sentiment Analysis
+# Twitter Sentiment Analysis
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -55,10 +55,10 @@ id,tweet,label
 
 ---
 
-## 📦 Release
+## Release
 Check the [latest release here](https://github.com/Dinesh2226/Twitter-sentiment-analysis/releases)
 
 ---
 
-## 📄 License
+## License
 This project is licensed under the **MIT License**.
